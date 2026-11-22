@@ -1,0 +1,14 @@
+SOP-03: Temperature Excursion Response
+Owner: Quality | Version 2.4
+
+§1 Upper temperature limits
+An excursion is cargo-area temperature above the upper limit for that cargo. Upper limits are: vaccine 8°C, dairy 6°C, meat 6°C, seafood 4°C, produce 10°C.
+
+§2 Response steps
+Step 1: verify the reading is real using SOP-07. Step 2: call the driver and check the reefer unit and the door. Step 3: record the start time, peak temperature and duration. Step 4: if the temperature stays above the limit, apply SOP-05 when the reefer is at fault.
+
+§3 Time thresholds
+An excursion lasting 15 minutes or more is escalated to Level 2 under SOP-06. Cumulative time above the limit of 30 minutes or more means the load is placed in quarantine and escalated to Level 3.
+
+§4 Documentation
+Export the sensor log for the trip and attach it to the incident ticket before the end of the shift.

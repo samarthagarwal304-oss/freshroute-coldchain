@@ -1,0 +1,14 @@
+SOP-01: Temperature Monitoring and Alert Policy
+Owner: Operations | Version 3.2
+
+§1 Legacy fixed-threshold alert
+The legacy alert fires when the cargo-area temperature is above 8°C for 2 consecutive minutes. It does not consider the cargo type, so it can fire on harmless door-open spikes and can stay silent while sensitive cargo such as seafood slowly warms above its own limit.
+
+§2 AI risk score and bands
+Each trip receives a spoilage risk score between 0 and 1. A trip is flagged when the score is at or above the flag threshold. ELEVATED means flagged with a score below 0.60. HIGH means a score of 0.60 or above. LOW means the trip is not flagged.
+
+§3 What dispatchers do with a flag
+For an ELEVATED trip the dispatcher reviews the readings and follows SOP-03 for temperature excursions. For a HIGH trip the dispatcher starts the response immediately and escalates under SOP-06. A LOW score does not need action unless the driver or a customer reports a problem.
+
+§4 Transit time check
+Chilled cargo must have its temperature log reviewed at least once every 4 hours of transit.

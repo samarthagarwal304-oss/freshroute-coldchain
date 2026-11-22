@@ -1,0 +1,14 @@
+SOP-05: Refrigeration (Reefer) Unit Failure
+Owner: Fleet Maintenance | Version 2.0
+
+§1 Symptoms
+Suspect a reefer failure when the temperature climbs steadily, for example by more than 0.5°C every 10 minutes with the door closed, or when the unit shows an alarm.
+
+§2 Driver actions
+The driver stops safely, checks the unit fuel or power, and power-cycles the unit once. The driver reports the result to the dispatcher.
+
+§3 Recovery time limit
+If the unit has not restored the setpoint within 15 minutes of the power cycle, the dispatcher redirects the truck to the nearest partner cold-store depot or sends a backup reefer truck for load transfer.
+
+§4 After the event
+Fleet Maintenance inspects the unit before it is used again. The truck is marked unavailable in the system until cleared.

@@ -1,0 +1,186 @@
+{
+  "split": {
+    "train": 1400,
+    "val": 700,
+    "test": 900,
+    "positives": {
+      "train": 76,
+      "val": 37,
+      "test": 47
+    },
+    "test_days": 9
+  },
+  "assumptions": {
+    "cost_missed_spoilage": 400.0,
+    "cost_false_alert": 20.0
+  },
+  "models": {
+    "baseline_rule_8C_2min": {
+      "tp": 39,
+      "fp": 301,
+      "fn": 8,
+      "precision": 0.11470588235294117,
+      "recall": 0.8297872340425532,
+      "f1": 0.2015503875968992,
+      "false_alerts_per_truck_week": 4.682222222222221,
+      "cost": 9220.0,
+      "alert_events_per_truck_week": 11.324444444444444,
+      "precision_ci95": [
+        0.082,
+        0.148
+      ],
+      "recall_ci95": [
+        0.708,
+        0.932
+      ]
+    },
+    "logistic_regression": {
+      "tp": 38,
+      "fp": 42,
+      "fn": 9,
+      "precision": 0.475,
+      "recall": 0.8085106382978723,
+      "f1": 0.5984251968503936,
+      "false_alerts_per_truck_week": 0.6533333333333333,
+      "cost": 4440.0,
+      "pr_auc": 0.7890931391135055,
+      "threshold": 0.59,
+      "precision_ci95": [
+        0.365,
+        0.577
+      ],
+      "recall_ci95": [
+        0.684,
+        0.921
+      ],
+      "recall_at_baseline_false_alert_volume": 0.9148936170212766
+    },
+    "lightgbm": {
+      "tp": 41,
+      "fp": 19,
+      "fn": 6,
+      "precision": 0.6833333333333333,
+      "recall": 0.8723404255319149,
+      "f1": 0.766355140186916,
+      "false_alerts_per_truck_week": 0.2955555555555555,
+      "cost": 2780.0,
+      "pr_auc": 0.8463059486997572,
+      "threshold": 0.09,
+      "precision_ci95": [
+        0.556,
+        0.797
+      ],
+      "recall_ci95": [
+        0.762,
+        0.956
+      ],
+      "recall_at_baseline_false_alert_volume": 0.9361702127659575
+    }
+  },
+  "lightgbm_top_features_by_gain": [
+    [
+      "dm_above_3",
+      2607.4
+    ],
+    [
+      "min_above_3",
+      2334.9
+    ],
+    [
+      "max_roll30",
+      1579.5
+    ],
+    [
+      "resid_p95",
+      1098.0
+    ],
+    [
+      "cargo_code",
+      710.4
+    ],
+    [
+      "longest_run_above_2",
+      627.6
+    ],
+    [
+      "min_above_8abs",
+      355.9
+    ],
+    [
+      "setpoint",
+      327.6
+    ],
+    [
+      "duration_min",
+      263.6
+    ],
+    [
+      "dm_above_1",
+      254.3
+    ]
+  ],
+  "error_analysis_test": {
+    "model_false_negatives": {
+      "count": 6,
+      "by_scenario": {
+        "normal": 4,
+        "door_benign": 1,
+        "cooling_partial": 1
+      },
+      "by_cargo": {
+        "produce": 4,
+        "vaccine": 1,
+        "meat": 1
+      }
+    },
+    "model_false_positives": {
+      "count": 19,
+      "by_scenario": {
+        "door_long": 8,
+        "door_benign": 4,
+        "cooling_failure": 4,
+        "cooling_partial": 3
+      },
+      "by_cargo": {
+        "dairy": 7,
+        "vaccine": 6,
+        "seafood": 5,
+        "meat": 1
+      }
+    },
+    "baseline_false_positives": {
+      "count": 301,
+      "by_scenario": {
+        "normal": 124,
+        "door_benign": 79,
+        "glitch": 38,
+        "door_long": 29,
+        "cooling_partial": 20,
+        "cooling_failure": 11
+      },
+      "by_cargo": {
+        "produce": 179,
+        "dairy": 51,
+        "vaccine": 48,
+        "meat": 12,
+        "seafood": 11
+      }
+    },
+    "baseline_false_negatives": {
+      "count": 8,
+      "by_scenario": {
+        "cooling_failure": 4,
+        "normal": 2,
+        "cooling_partial": 1,
+        "door_long": 1
+      },
+      "by_cargo": {
+        "seafood": 4,
+        "dairy": 1,
+        "meat": 1,
+        "vaccine": 1,
+        "produce": 1
+      }
+    }
+  }
+}

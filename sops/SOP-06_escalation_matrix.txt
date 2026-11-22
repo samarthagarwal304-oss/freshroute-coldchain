@@ -1,0 +1,14 @@
+SOP-06: Escalation Matrix
+Owner: Operations | Version 3.0
+
+§1 Level 1: Dispatcher
+The dispatcher acknowledges any flagged trip within 10 minutes and starts the checks in SOP-03.
+
+§2 Level 2: Operations supervisor
+Escalate to the operations supervisor when a trip is HIGH risk or when an excursion lasts 15 minutes or more. The supervisor acknowledges within 15 minutes.
+
+§3 Level 3: Quality and Customer manager
+Escalate to the Quality and Customer manager for any vaccine excursion, for cumulative excursion time of 30 minutes or more, or whenever a load is quarantined. The manager acknowledges within 30 minutes.
+
+§4 Contact method
+Use the on-call rota in the dispatch console. Phone first, then log the escalation in the incident ticket.

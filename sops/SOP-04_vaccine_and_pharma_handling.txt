@@ -1,0 +1,14 @@
+SOP-04: Vaccine and Pharmaceutical Handling
+Owner: Quality | Version 4.0
+
+§1 Required range
+Vaccines must be kept between 2°C and 8°C for the whole trip. They must never freeze, so a reading below 2°C is also an excursion.
+
+§2 Excursion rule
+If the temperature is above 8°C for more than 10 minutes in total, the load is placed in quarantine. The Quality team must be notified within 30 minutes of the event.
+
+§3 Delivery
+A quarantined vaccine load must not be delivered. It is held until Quality decides on disposition under SOP-09.
+
+§4 Door discipline
+Vaccine loads follow the stricter door-open limits in SOP-02 section 2.

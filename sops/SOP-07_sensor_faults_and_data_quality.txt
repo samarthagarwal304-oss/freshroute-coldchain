@@ -1,0 +1,14 @@
+SOP-07: Sensor Faults and Data Quality
+Owner: Fleet Maintenance | Version 1.8
+
+§1 Implausible jumps
+A temperature jump of more than 5°C within one minute is treated as a probable sensor glitch. Confirm with a second sensor or by calling the driver before escalating.
+
+§2 Missing data
+If readings are missing for more than 10 consecutive minutes, call the driver and ask for a manual temperature reading every 15 minutes until the sensor reports again.
+
+§3 Drift and calibration
+Sensors are recalibrated every 90 days, or immediately when the offset against a reference thermometer is more than 1°C. Readings from a drifting sensor must be corrected or treated with caution.
+
+§4 Duplicates
+Duplicate readings with the same timestamp are ignored. They do not count as extra minutes above a limit.

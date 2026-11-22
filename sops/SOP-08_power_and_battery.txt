@@ -1,0 +1,11 @@
+SOP-08: Power and Battery Management
+Owner: Fleet Maintenance | Version 1.4
+
+§1 Battery warnings
+A sensor battery below 20% raises a warning for the dispatcher. A battery below 10% means the driver must plug the sensor into vehicle power.
+
+§2 Loss of power
+If the sensor loses power, the driver records the cargo temperature manually every 15 minutes and reports it to the dispatcher.
+
+§3 Charging
+Sensor units are charged at the depot between trips. A unit returned with less than 30% battery is flagged to Fleet Maintenance.

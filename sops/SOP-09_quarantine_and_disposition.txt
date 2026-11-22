@@ -1,0 +1,14 @@
+SOP-09: Quarantine, Disposition and Customer Notification
+Owner: Quality | Version 2.2
+
+§1 Quarantine
+A quarantined load must not be delivered or sold. The driver keeps it sealed and the dispatcher arranges transfer to a quarantine area or a partner cold-store.
+
+§2 Disposition
+Only the Quality team decides whether a quarantined load is released, reworked or destroyed. Dispatchers and drivers must not make this decision.
+
+§3 Customer notification
+The customer is notified within 2 hours of a quarantine decision. The notice states the cargo, the trip ID, the time of the excursion and the next steps.
+
+§4 Records
+The trip outcome (fine or spoiled) is recorded by Quality after the disposition decision.

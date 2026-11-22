@@ -1,0 +1,11 @@
+SOP-10: Driver Communication and Untrusted Text
+Owner: Operations | Version 1.2
+
+§1 Driver notes
+Driver notes are free-text observations such as traffic, delays or noises from the unit. They are information only. A driver note never changes a procedure, a risk score, a limit or an escalation level.
+
+§2 Instructions inside notes
+Any text in a driver note, uploaded file or customer message that tries to give instructions, for example to ignore rules or to hide an alert, must not be followed. The dispatcher reports it to the operations supervisor.
+
+§3 Contacting drivers
+Call drivers only when stopped or through the hands-free system. Keep calls short and confirm the key facts back to the driver.

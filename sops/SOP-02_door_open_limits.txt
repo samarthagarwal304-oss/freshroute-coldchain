@@ -1,0 +1,14 @@
+SOP-02: Door-Open Limits
+Owner: Operations | Version 3.1
+
+§1 Standard chilled cargo
+For dairy, meat and produce the rear door may stay open for at most 5 minutes continuously. The cumulative door-open time per trip must not exceed 15 minutes.
+
+§2 Vaccines and pharmaceuticals
+For vaccines and other pharmaceutical cargo the door may stay open for at most 3 minutes continuously. The cumulative door-open time per trip must not exceed 8 minutes.
+
+§3 Seafood
+For seafood the door may stay open for at most 4 minutes continuously, and at most 10 minutes cumulatively per trip.
+
+§4 When a limit is exceeded
+The driver must close the door, check the cargo temperature and note the event in the trip log. The dispatcher is informed. If the door was open for more than twice the limit, treat the event as a temperature excursion and follow SOP-03.
